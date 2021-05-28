@@ -11,7 +11,6 @@
  
 
 #define PORT 8080
-#define BUL_LEN 100
 
 int main(int argc, char const* argv[]) {
     char commande[1024] = {0}; 
