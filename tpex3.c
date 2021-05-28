@@ -32,6 +32,7 @@ int main(int argc, char *argv[])
 
     for (int i = 0; i < nb; i++)
     {
+      args[i] = i;
       pthread_create(&(threads[i]), NULL,&threadrun, &args[i]);
     }
 
