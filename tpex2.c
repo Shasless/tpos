@@ -9,6 +9,7 @@
 void *threadrun(void *arg)
 {
     printf("Hello i'm %d\n", getpid());
+    
     return NULL;
 }
 
@@ -40,6 +41,9 @@ int main(int argc, char *argv[])
             
     }
 
+    printf("------------THE END------------");
     free(threads);
-    exit(EXIT_SUCCESS);
+    
+    return 0;
+    
 }
